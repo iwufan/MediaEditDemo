@@ -1,0 +1,6 @@
+framework module Pods_MediaEditDemo {
+  umbrella header "Pods-MediaEditDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
