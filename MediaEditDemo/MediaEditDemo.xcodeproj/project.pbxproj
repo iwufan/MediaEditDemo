@@ -11,6 +11,9 @@
 		63C933182265674400671213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C933172265674400671213 /* Assets.xcassets */; };
 		63C9331B2265674400671213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C933192265674400671213 /* LaunchScreen.storyboard */; };
 		63C9332322656B6000671213 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9332222656B6000671213 /* HomeViewController.swift */; };
+		63C9332A2265AF0200671213 /* KiClipperHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C933272265AF0200671213 /* KiClipperHelper.swift */; };
+		63C9332B2265AF0200671213 /* KiImageClipperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C933282265AF0200671213 /* KiImageClipperViewController.swift */; };
+		63C9332C2265AF0200671213 /* KiClipperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C933292265AF0200671213 /* KiClipperView.swift */; };
 		8EE8358059BC5F3D359C43AA /* Pods_MediaEditDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C74250422D9A5D8547DE8C /* Pods_MediaEditDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +25,9 @@
 		63C9331A2265674400671213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63C9331C2265674400671213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63C9332222656B6000671213 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		63C933272265AF0200671213 /* KiClipperHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KiClipperHelper.swift; sourceTree = "<group>"; };
+		63C933282265AF0200671213 /* KiImageClipperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KiImageClipperViewController.swift; sourceTree = "<group>"; };
+		63C933292265AF0200671213 /* KiClipperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KiClipperView.swift; sourceTree = "<group>"; };
 		899164E86F85578FBA6AB056 /* Pods-MediaEditDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaEditDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MediaEditDemo/Pods-MediaEditDemo.release.xcconfig"; sourceTree = "<group>"; };
 		EC482040F6881DE3016E766B /* Pods-MediaEditDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaEditDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaEditDemo/Pods-MediaEditDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,13 +73,40 @@
 		63C9330F2265674100671213 /* MediaEditDemo */ = {
 			isa = PBXGroup;
 			children = (
+				63C933252265AEE600671213 /* EditImages */,
 				63C933102265674100671213 /* AppDelegate.swift */,
 				63C9332222656B6000671213 /* HomeViewController.swift */,
+				63C933242265A5AB00671213 /* Supportting Files */,
+			);
+			path = MediaEditDemo;
+			sourceTree = "<group>";
+		};
+		63C933242265A5AB00671213 /* Supportting Files */ = {
+			isa = PBXGroup;
+			children = (
 				63C933172265674400671213 /* Assets.xcassets */,
 				63C933192265674400671213 /* LaunchScreen.storyboard */,
 				63C9331C2265674400671213 /* Info.plist */,
 			);
-			path = MediaEditDemo;
+			path = "Supportting Files";
+			sourceTree = "<group>";
+		};
+		63C933252265AEE600671213 /* EditImages */ = {
+			isa = PBXGroup;
+			children = (
+				63C933262265AF0200671213 /* KiClipperHelper */,
+			);
+			path = EditImages;
+			sourceTree = "<group>";
+		};
+		63C933262265AF0200671213 /* KiClipperHelper */ = {
+			isa = PBXGroup;
+			children = (
+				63C933272265AF0200671213 /* KiClipperHelper.swift */,
+				63C933282265AF0200671213 /* KiImageClipperViewController.swift */,
+				63C933292265AF0200671213 /* KiClipperView.swift */,
+			);
+			path = KiClipperHelper;
 			sourceTree = "<group>";
 		};
 		DDBC77709A066CAAE2ABB488 /* Pods */ = {
@@ -210,6 +243,9 @@
 			files = (
 				63C933112265674100671213 /* AppDelegate.swift in Sources */,
 				63C9332322656B6000671213 /* HomeViewController.swift in Sources */,
+				63C9332C2265AF0200671213 /* KiClipperView.swift in Sources */,
+				63C9332B2265AF0200671213 /* KiImageClipperViewController.swift in Sources */,
+				63C9332A2265AF0200671213 /* KiClipperHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R2D7HB6A6A;
-				INFOPLIST_FILE = MediaEditDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MediaEditDemo/Supportting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,7 +405,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R2D7HB6A6A;
-				INFOPLIST_FILE = MediaEditDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MediaEditDemo/Supportting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
